@@ -14,6 +14,7 @@ public class App {
     private static final int PROMOTION_VALUE = 1;
     private static final int MAX_PROMOTION_COUNT = 50000;
     private static final double ADDITIONAL_PROMOTION = 0.5;
+    private static final double MIN_PROMOTION = 0.1;
     private static double promotionPercentage = 0.1;
     private static int promotionCount = 0;
     private static LocalDate currentDate = LocalDate.of(2021, 11, 22);
@@ -47,6 +48,8 @@ public class App {
                     getPromotion(vendingMachine, promotionCount, currentDate);
                     if(currentDate.isBefore(LocalDate.now()))
                         currentDate = LocalDate.now();
+
+                    takeDrink(vendingMachine);
                     break;
 
                 case 4:
@@ -62,12 +65,12 @@ public class App {
         VendingMachineContext context = (VendingMachineContext) vendingMachine;
         Inventory<Item> promotionItem = new Inventory<>();
 
-        if(currentDate.isBefore(LocalDate.now())) {
-            currentDate.with(LocalDate.now());
-            if(currentCount <= MAX_PROMOTION_COUNT)
+        if(currentCount <= MAX_PROMOTION_COUNT)
+            if(currentDate.isBefore(LocalDate.now()))
                 promotionPercentage += ADDITIONAL_PROMOTION;
-            else
-                promotionCount = 0;
+        else {
+            promotionCount = 0;
+            promotionPercentage = MIN_PROMOTION;
         }
         context.getCurrentItemInventory().getInventory()
                 .forEach((key, value) -> {

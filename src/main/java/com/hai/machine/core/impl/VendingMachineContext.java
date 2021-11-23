@@ -31,10 +31,10 @@ public class VendingMachineContext implements VendingMachine {
 
     private void init() {
         Arrays.stream(Note.values())
-                .forEach(n -> cashInventory.put(n, 1));
+                .forEach(n -> cashInventory.put(n, 50000));
 
         Arrays.stream(Item.values())
-                .forEach(i -> itemInventory.put(i , 15));
+                .forEach(i -> itemInventory.put(i , 500000));
     }
 
 
