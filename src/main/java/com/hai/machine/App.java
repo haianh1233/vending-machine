@@ -17,7 +17,7 @@ public class App {
     private static final double MIN_PROMOTION = 0.1;
     private static double promotionPercentage = 0.1;
     private static int promotionCount = 0;
-    private static LocalDate currentDate = LocalDate.of(2021, 11, 22);
+    private static LocalDate currentDate = LocalDate.now();
 
     public static void main(String[] args) {
         List<String> welcomeOption = new ArrayList<>();
