@@ -1,16 +1,11 @@
 package com.hai.machine.state.impl;
 
-import com.hai.machine.core.VendingMachine;
 import com.hai.machine.core.impl.VendingMachineContext;
 import com.hai.machine.model.Inventory;
 import com.hai.machine.state.State;
 import com.hai.machine.util.Item;
 import com.hai.machine.util.Note;
 
-import javax.swing.text.html.Option;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Optional;
 
 public class WaitingForChoiceState implements State {

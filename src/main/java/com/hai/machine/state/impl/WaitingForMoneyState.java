@@ -6,7 +6,6 @@ import com.hai.machine.state.State;
 import com.hai.machine.util.Item;
 import com.hai.machine.util.Note;
 
-import javax.naming.Context;
 import java.util.Optional;
 
 public class WaitingForMoneyState implements State {
