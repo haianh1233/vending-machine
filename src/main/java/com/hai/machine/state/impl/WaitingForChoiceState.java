@@ -24,6 +24,7 @@ public class WaitingForChoiceState implements State {
     @Override
     public void insertMoney(Note note) {
         long currentBalance = context.getCurrentBalance();
+        context.getCashInventory().add(note);
         context.setCurrentBalance(currentBalance + note.getValue());
     }
 
