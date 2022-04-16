@@ -15,6 +15,7 @@ public class Inventory<T> {
     public void add(T item) {
         int count = inventory.getOrDefault(item, 0);
         inventory.put(item, count + 1);
+
     }
 
     public void put(T item, int quantity) {

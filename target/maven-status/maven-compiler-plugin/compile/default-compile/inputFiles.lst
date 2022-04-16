@@ -1,0 +1,9 @@
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/core/impl/VendingMachineContext.java
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/util/Note.java
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/state/impl/WaitingForMoneyState.java
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/state/impl/WaitingForChoiceState.java
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/util/Item.java
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/model/Inventory.java
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/state/State.java
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/core/VendingMachine.java
+/home/haianh1233/personal-project/vending-machine/src/main/java/com/hai/machine/App.java

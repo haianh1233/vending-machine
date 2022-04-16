@@ -1,0 +1,9 @@
+com/hai/machine/state/impl/WaitingForChoiceState.class
+com/hai/machine/core/impl/VendingMachineContext.class
+com/hai/machine/state/impl/WaitingForMoneyState.class
+com/hai/machine/App.class
+com/hai/machine/state/State.class
+com/hai/machine/util/Item.class
+com/hai/machine/util/Note.class
+com/hai/machine/model/Inventory.class
+com/hai/machine/core/VendingMachine.class
