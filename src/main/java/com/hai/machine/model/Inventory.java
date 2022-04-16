@@ -28,6 +28,7 @@ public class Inventory<T> {
         if(quantity > count)
             return false;
         inventory.put(item, count - quantity);
+
         return true;
     }
 
